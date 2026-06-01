@@ -29,6 +29,7 @@ class State(TypedDict, total=False):
     confidence: float
     final_decision: str
     audit_log: Annotated[list[dict], add]
+    _trace: object  # opaque Langfuse trace handle
 
 
 # ----- tools -----

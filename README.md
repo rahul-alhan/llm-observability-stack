@@ -164,6 +164,10 @@ llm-observability-stack/
 | **Prom + Langfuse together** | Langfuse for traces / debugging; Prom for SLO alerts (different audiences, different cardinality) |
 | **Sampling** | 100% trace at <1k QPS; switch to 10% + always-trace-errors at scale |
 
+### Production notes
+
+- **PII in traces.** Langfuse receives raw prompt + completion text. If user content contains PII, either run Langfuse self-hosted in your VPC or pre-hash sensitive segments before `record_llm_call`.
+
 ---
 
 ## License
