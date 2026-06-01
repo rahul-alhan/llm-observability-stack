@@ -77,6 +77,15 @@ curl http://localhost:9100/metrics | grep llm_
 
 ---
 
+## Running Tests
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+---
+
 ## What Gets Traced
 
 For every agent run, the wrapper emits:
