@@ -1,8 +1,13 @@
 # LLM Observability Stack — Langfuse Tracing for Agentic Pipelines
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=rahul-alhan/llm-observability-stack&branch=main&mainModule=dashboards/cohort_drilldown.py)
+[![ci](https://github.com/rahul-alhan/llm-observability-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/rahul-alhan/llm-observability-stack/actions/workflows/ci.yml)
+
 Production-grade **LLM observability** — wraps a LangGraph agent with **Langfuse** tracing and ships dashboards for token cost, p95 latency, tool-call success rate, and prompt-version A/B comparisons.
 
 > Designed to bolt directly onto [`langgraph-agentic-pipeline`](https://github.com/rahul-alhan/langgraph-agentic-pipeline) — same graph, now fully observable.
+
+**Try the cohort drilldown without cloning** → click **Open in Streamlit** above to deploy `dashboards/cohort_drilldown.py` to your free Streamlit Cloud account in one step.
 
 ---
 
